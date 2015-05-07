@@ -1,0 +1,30 @@
+ $(document).ready(function() {	
+         
+         
+         for(var i=1;i<=22;i++) {
+         var SID2='#show'+i;
+         $(SID2).hide();
+         }
+         $('#myTable').DataTable(
+         {
+         "iDisplayLength": 22,
+		  responsive: true
+         });
+         
+         $(".fancybox").fancybox(); 
+		 $('.fancybox').attr('disabled','disabled');
+         $(".playerinfo").fancybox({
+         
+         fitToView	: false,
+         width		: '40%',
+         height		: '70%',
+         autoSize	: false,
+         closeClick	: false,
+         openEffect	: 'none',
+         closeEffect	: 'none',
+         scrolling : 'auto'
+         });
+         s();
+         
+         });
+        
